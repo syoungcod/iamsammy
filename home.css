@@ -1,0 +1,300 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    font-family: "Anta", sans-serif;
+}
+
+h1 {
+    color: rgb(220, 213, 213);
+    display: flex;
+    font-size: 23px;
+    top: 0;
+    left: 20px;
+    position: absolute;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+    z-index: 999;
+    
+    
+}
+
+img {
+    clip-path: circle(110px);
+}
+
+.intro {
+    color: rgb(190, 189, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 33px;
+    text-align: center;
+    animation: scaleAnimation 1s ease-in;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+    animation: scaleAnimation 0.8s ease-in;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        filter: blur(8px);
+      transform: scale(0.7); /* Start with original size */
+    }
+    100% {
+        filter: blur(0);
+      transform: scale(1); /* End with double the size */
+    }
+}
+
+.opener {
+    fill: rgb(182, 178, 178);
+}
+
+.navigation {
+    visibility: hidden;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    text-decoration: none;
+    align-items: center;
+    transition-duration: 0.17s;
+    color: rgb(69, 66, 66);
+}
+
+nav a:hover {
+    color: rgb(110, 107, 107);
+    transform: scale(1.2);
+}
+
+.sidebar {
+    position: fixed;
+    top: -30px;
+    right: 0px;
+    height: 100vh;
+    width: 340px;
+    font-size: 35px;
+    z-index: 999;
+    border-radius: 13px;
+    background-color: rgba(250, 247, 247, 0.337);
+    backdrop-filter: blur(19px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.closer {
+    fill: grey;
+}
+
+.menu {
+    padding-bottom: 50px;
+    z-index: 1000;
+}
+
+@media only screen and (min-width: 576px) {
+    img {
+        clip-path: circle(160px);
+    }
+
+    .sidebar {
+        font-size: 43px;
+        width: 500px;
+    }
+
+    .menu {
+        padding-bottom: 80px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 30px;
+        padding: 40px;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-list {
+        padding: 20%;
+        padding-top: 5%;
+    }
+
+    .opener {
+        visibility: hidden;
+    }
+
+    .sidebar {
+        visibility: hidden;
+    }
+
+    .navigation {
+        visibility: visible;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .picture {
+        margin-top: 1%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .picture {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    .navigation {
+        visibility: visible;
+        color: white;
+        font-size: 30px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .opener {
+        visibility: hidden;
+    }
+
+    .sidebar {
+        visibility: hidden;
+    }
+
+    .sidebar {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    img {
+        clip-path: none;
+        width: 1100px;
+        height: 1100px;
+        filter: brightness(0.5);
+    }
+
+    h1 {
+        z-index: 888;
+        font-size: 60px;
+        left: 90px;
+    }
+
+    .navigation {
+        z-index: 888;
+    }
+
+    .picture {
+        justify-content: start;
+        margin: auto;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+    }
+
+    .intro {
+        position: absolute;
+        right: 210px;
+        top: 260px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 35px; 
+        text-wrap: wrap;
+        padding: 0;
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    img {
+        clip-path: none;
+        width: 700px;
+        height: 700px;
+        filter: brightness(0.5);
+    }
+
+    .picture {
+        justify-content: start;
+        margin: auto;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+    }
+
+    .intro {
+        position: absolute;
+        right: 60px;
+        top: 160px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 25px; 
+        text-wrap: wrap;
+        padding: 0;
+        width: 500px;
+    }
+
+    nav a {
+        font-size: 25px;
+    }
+
+    h1 {
+        z-index: 888;
+        left: 70px;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hidesidebar() class="menu"><a href="#" class="closer"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+               
+                <li class="menu"><a href="index.html">HOME</a></li>
+                <li class="menu"><a href="work.html">WORK</a></li>
+                <li class="menu"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <h1>iamsammy</h1>
+            <ul >
+                
+                <li class="navigation"><a href="index.html">HOME</a></li>
+                <li class="navigation"><a href="work.html">WORK</a></li>
+                <li class="navigation"><a href="contact.html">CONTACT</a></li>
+                <li onclick=showsidebar()><a href="#" class="opener" ><svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 -960 960 960" width="45"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>About Samuel Chilinda</h2>
+
+        <p>Welcome to Sammy Chilinda's digital domain! Here, you'll encounter the work of a seasoned Front-End Developer, Sammy Chilinda, whose passion for crafting immersive digital experiences knows no bounds.
+
+            Sammy's expertise lies in the realm where creativity meets code. With a meticulous eye for detail and a knack for elegant design, Sammy breathes life into static screens, transforming them into dynamic, user-centric interfaces.
+            
+            Driven by a relentless pursuit of excellence, Sammy is constantly honing his skills, staying abreast of the latest trends and technologies in the ever-evolving landscape of web development.</p>
+
+            <p>
+                For Sammy, front-end development isn't just about writing lines of code—it's about crafting meaningful connections between users and the digital world. With each project, Sammy strives to deliver not just functionality, but experiences that resonate and inspire.
+
+                So, whether you're seeking a captivating website or simply curious about the world of front-end development, Sammy Chilinda invites you to explore and discover the possibilities within this digital realm.
+
+                Welcome to Sammy's corner of the web—where innovation meets imagination, and every click tells a story.
+
+
+            </p>
+    </main>
+
+
+    <script>
+        function showsidebar() {
+            const sidebar = document.querySelector ('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hidesidebar() {
+            const sidebar = document.querySelector ('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
